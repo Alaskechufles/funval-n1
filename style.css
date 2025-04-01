@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #253950;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.list {
+  list-style: disc;
+  margin: 30px;
+}
+
+.card {
+  background-color: rgb(52, 52, 112);
+  margin: 20px;
+  width: 150px;
+  padding: 15px 10px;
+  border-radius: 12px;
+}
