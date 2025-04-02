@@ -23,9 +23,22 @@ a {
 }
 
 .card {
-  background-color: rgb(52, 52, 112);
-  margin: 20px;
-  width: 150px;
-  padding: 15px 10px;
+  background-color: hsl(31, 34%, 25%);
+  margin: 20px auto;
+  width: 90%;
+  padding: 50px 30px 40px 10px;
   border-radius: 12px;
+}
+
+.divisor {
+  margin: 20px;
+}
+
+.divisor2 {
+  border: solid 1px white;
+  width: 300px;
+  margin: 20px auto;
+}
+.formulario {
+  margin: 30px 20px;
 }
