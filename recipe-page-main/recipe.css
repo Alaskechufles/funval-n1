@@ -21,3 +21,23 @@ body {
 #omelette {
   width: 100%;
 }
+
+.li {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.punto {
+  width: 5px;
+  height: 5px;
+  background-color: brown;
+  border-radius: 50%;
+}
+
+.m2 {
+  list-style-position: outside;
+  margin-left: 13px;
+}
+.i2 {
+  padding-left: 23px;
+}
