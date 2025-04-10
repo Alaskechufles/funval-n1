@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,23 +8,24 @@
     <script src="./dark.js" defer></script>
   </head>
   <body
-    class="h-screen flex justify-center items-center bg-gray-200 dark:bg-gray-800"
+    class="h-screen flex justify-center items-center bg-sky-200 dark:bg-sky-950"
   >
     <main
-      class="bg-gray-300 dark:bg-gray-700 h-3/6 w-2/5 rounded-4xl flex flex-col items-center justify-center p-5 gap-1.5 dark:text-white"
+      class="bg-white h-1/2 w-1/2 rounded-3xl flex flex-col p-8 justify-center items-center gap-1.5"
     >
-      <img src="https://placecats.com/200/100" alt="cat" class="rounded-3xl" />
+      <img src="https://placecats.com/150/100" alt="" class="rounded-2xl" />
       <h1 class="font-bold">The Cat</h1>
-      <p class="text-[8px] text-center font-semibold">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, hic
-        saepe exercitationem eius explicabo dicta dolores ratione corporis
-        debitis magni.
-      </p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       <button
-        id="dark-button"
-        class="bg-white text-[8px] text-black p-1 rounded-2xl"
+        id="dark"
+        class="px-2 py-1 flex items-center rounded-full cursor-pointer bg-white"
       >
-        Switch Mode
+        <div class="hidden dark:block">
+          <img src="../resources/dark/sun-regular-24.png" alt="" />
+        </div>
+        <div class="block dark:hidden">
+          <img src="../resources/dark/moon-regular-24.png" alt="" />
+        </div>
       </button>
     </main>
   </body>
