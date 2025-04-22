@@ -29,7 +29,7 @@ Usar
 -opcional(Switch case)
 */
 
-alert("Bienvenido");
+/* alert("Bienvenido");
 
 let idioma = prompt(
   "Seleccione el idioma:\n1-Español\n2-Englis\n\n o ingrese otro idioma"
@@ -57,4 +57,37 @@ if (operacion === "1") {
   console.log("seleccionó Pagos");
 } else {
   console.log("seleccionó una opción invalida");
+} */
+
+//bucles for while
+
+let index = 0;
+for (index = 0; index < 10; index++) {
+  console.log("hola");
+  console.log(index);
+  if (index === 5) {
+    console.log("estoy aquí!!");
+  }
+}
+
+let fin = true;
+/* while (fin === true) {
+  index++;
+  console.log("hola");
+  console.log(index);
+  let res = prompt("finalizo?");
+  if (res === "yes") {
+    console.log("estoy aquí!!");
+    fin = false;
+  }
+} */
+
+for (let index = 0; fin === true; index++) {
+  console.log("hola");
+  console.log(index);
+  /* let res = prompt("finalizo?");
+  if (res === "yes") {
+    console.log("estoy aquí!!");
+    fin = false;
+  } */
 }
