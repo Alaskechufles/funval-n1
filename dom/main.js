@@ -35,24 +35,24 @@ let persona = {
 
 let lista = document.querySelector("#listaID");
 
-lista.innerHTML = `
-    <li class="bg-red-500 font-bold text-3xl">${persona.nombre}</li>
-    <li>${persona.edad}</li>
-    <li>${persona.estudiante ? "Es estudiante" : ""}</li>
-    <li>${persona.cursos[0].nCurso}</li>
-    <li>${persona.cursos[0].notas[0].eParcial1}</li>
-`;
+// lista.innerHTML = `
+//     <li class="bg-red-500 font-bold text-3xl">${persona.nombre}</li>
+//     <li>${persona.edad}</li>
+//     <li>${persona.estudiante ? "Es estudiante" : ""}</li>
+//     <li>${persona.cursos[0].nCurso}</li>
+//     <li>${persona.cursos[0].notas[0].eParcial1}</li>
+// `;
 
-let parrafos = document.querySelectorAll(".parrafo");
-//[p,p,p]
+// let parrafos = document.querySelectorAll(".parrafo");
+// //[p,p,p]
 
-let btnAlert = document.querySelector("#alert");
+// let btnAlert = document.querySelector("#alert");
 
-btnAlert.addEventListener("click", alerta);
+// btnAlert.addEventListener("click", alerta);
 
-function alerta() {
-  alert("hola");
-}
+// function alerta() {
+//   alert("hola");
+// }
 
 const auto = {
   marca: "Toyota",
@@ -100,25 +100,40 @@ const auto = {
   },
 };
 
-let dAnteriores = document.querySelector("#dueñosAnteriores");
+// let dAnteriores = document.querySelector("#dueñosAnteriores");
 
-dAnteriores.innerHTML = "";
+// dAnteriores.innerHTML = "";
 
-for (let i = 0; i < auto.dueñosAnteriores.length; i++) {
-  dAnteriores.innerHTML =
-    dAnteriores.innerHTML + `<li>${auto.dueñosAnteriores[i]}</li>`;
-}
+// for (let i = 0; i < auto.dueñosAnteriores.length; i++) {
+//   dAnteriores.innerHTML =
+//     dAnteriores.innerHTML + `<li>${auto.dueñosAnteriores[i]}</li>`;
+// }
 
-const parrafo2 = document.createElement("p");
-parrafo2.textContent = "Hola soy un parrafo";
-document.body.appendChild(parrafo2);
+// const parrafo2 = document.createElement("p");
+// parrafo2.textContent = "Hola soy un parrafo";
+// document.body.appendChild(parrafo2);
 
-const lista3 = document.createElement("ul");
-document.body.appendChild(lista3);
-const listElement = document.createElement("li");
-listElement.textContent = auto.marca;
-lista3.appendChild(listElement);
+// const lista3 = document.createElement("ul");
+// document.body.appendChild(lista3);
+// const listElement = document.createElement("li");
+// listElement.textContent = auto.marca;
+// lista3.appendChild(listElement);
 
 //Crear elementos
 //Poder Iterar esos elementos
 //addEventListener
+
+console.log(auto.opciones.length);
+console.log(auto.opciones[0]);
+
+/* document.body.innerHTML = `
+  <p>${auto.opciones[0]}</p>
+  <p>${auto.opciones[1]}</p>
+  <p>${auto.opciones[2]}</p>
+  `; */
+
+for (let i = 0; i < auto.opciones.length; i++) {
+  document.body.innerHTML += `
+  <p>${auto.opciones[i]}</p>
+  `;
+}
